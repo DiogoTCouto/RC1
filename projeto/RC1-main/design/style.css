@@ -1,0 +1,127 @@
+:root {
+  --main-bg-color: #fafafa;
+  --top-color: #23a6d5;
+  --dark-color: #001219;
+  --white-color: #fff;
+
+  --info-color: #444355;
+
+  --news-color: #0084b99c;
+}
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper a {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.35s all;
+  margin-bottom: 20px;
+}
+.wrapper a:hover{
+  font-size: 60px;
+  text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.289);
+}
+
+.wrapper{
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  margin-bottom: 50px;
+}
+.separar{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.section1{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+.section1 a{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  padding: 15px 30px;
+  font-size: 26px;
+  color: var(--white-color);
+  border-radius: 20px;
+  transition: 0.25s all;
+}
+
+.section1 a:hover{
+  opacity: 0.5;
+}
+
+
+.section2{
+  width: 100%;
+  max-width: 980px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.section2 h1{
+  font-size: 30px;
+  line-height: 50px;
+}
+.section2 h2{
+  font-size: 25px;
+  line-height: 50px;
+}
+.section2 ul{
+  margin-left: 20px;
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+}
+
+
+@media all and (max-width: 480px) {
+  .section1 a{
+    padding: 12px 15px;
+    font-size: 20px;
+    margin: 5px 8px;
+  }
+
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
